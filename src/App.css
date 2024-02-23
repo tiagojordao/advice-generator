@@ -1,0 +1,72 @@
+.container {
+    min-height: 100lvh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-componnent {
+    background-color: var(--dark-grayish-blue);
+    width: 500px;
+    height: 350px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    filter: drop-shadow(rgba(0,0,0, 0.15));
+    padding: 16px 32px;
+}
+
+.card-componnent > .advice-id {
+    color: var(--neon-green);
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+
+.card-componnent > .advice-content {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.card-componnent > svg {
+    transform: scale(0.9);
+}
+
+.btn-advice {
+    background-color: var(--neon-green);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+    margin-bottom: -35px;
+    cursor: pointer;
+}
+
+.btn-advice:hover {
+    filter: drop-shadow(0 0 10px var(--neon-green));
+    transform: rotate(315deg) scale(1.1);
+}
+
+.btn-advice > * {
+    transform: scale(0.8);
+}
+
+
+@media only screen and (max-width: 430px) {
+    .card-componnent {
+        width: 350px;
+        height: 250px;
+    }
+
+    .btn-advice {
+        width: 60px;
+        height: 60px;
+        margin-bottom: -45px;
+    }
+}
